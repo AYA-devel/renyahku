@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO Meta -->
+  <title>RenyahKu – Wafer Renyah dan Lezat (30gr & 70gr)</title>
+  <meta name="description" content="RenyahKu: wafer renyah rasa original & cokelat leleh. Tersedia 30gr dan 70gr. Tambah ke keranjang & checkout simulasi di satu halaman." />
+  <meta name="keywords" content="RenyahKu, wafer, camilan, snack cokelat, wafer 30gr, wafer 70gr" />
+  <meta name="author" content="RenyahKu" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="RenyahKu – Wafer Renyah & Lezat" />
+  <meta property="og:description" content="Wafer renyah rasa original & cokelat. Coba sekarang!" />
+  <meta property="og:type" content="website" />
+
+  <!-- ✅ Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root{--brown:#5a3e1b;--yellow:#f8d64e;--bg:#fffaf2;}
+    body{background:var(--bg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    .navbar{background:#e6b800}
+    .navbar-brand{color:var(--brown)!important;font-weight:700}
+    .card{border:none;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.08);overflow:hidden;transition:transform .2s}
+    .card:hover{transform:translateY(-4px)}
+    .btn-warning{background:var(--yellow);border:none;color:var(--brown);font-weight:700}
+    .btn-success{background:var(--brown);border:none}
+    footer{background:var(--brown);color:#fff}
+    #cartBtn{position:fixed;right:18px;bottom:18px;width:64px;height:64px;border-radius:50%;background:var(--yellow);color:var(--brown);font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.2);cursor:pointer;z-index:1050}
+    #cartCount{position:absolute;top:-6px;right:-6px;background:#dc3545;color:#fff;width:24px;height:24px;border-radius:50%;font-size:12px;display:flex;align-items:center;justify-content:center}
+    .qty-btn{width:28px;height:28px;line-height:14px;padding:0}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">🍪 RenyahKu</a>
+    </div>
+  </nav>
+
+  <section class="py-5 text-center bg-warning bg-opacity-25">
+    <div class="container">
+      <h1 class="fw-bold" style="color:var(--brown)">RenyahKu – Camilan Renyah Bikin Nagih</h1>
+      <p class="text-muted mb-0">Pilih ukuran favoritmu. Tambah ke keranjang. Checkout simulasi langsung di halaman ini.</p>
+    </div>
+  </section>
+
+  <!-- Keunggulan Produk -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" style="color:var(--brown)">✨ Keunggulan RenyahKu</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded bg-white h-100">
+            <h5 class="fw-semibold">Rasa Premium</h5>
+            <p class="text-muted">Dibuat dari bahan pilihan dengan rasa cokelat yang kaya dan tekstur wafer yang renyah setiap gigitan.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded bg-white h-100">
+            <h5 class="fw-semibold">Harga Terjangkau</h5>
+            <p class="text-muted">Nikmati camilan berkualitas tanpa perlu khawatir kantong bolong – mulai dari Rp 5.000 saja!</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded bg-white h-100">
+            <h5 class="fw-semibold">Praktis Dibawa</h5>
+            <p class="text-muted">Kemasan ringan dan higienis, cocok dibawa kemana pun: sekolah, kantor, atau piknik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="images/wafer30gr.jpeg" class="card-img-top" alt="RenyahKu Wafer 30gr Original" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-1">RenyahKu 30gr – Original</h5>
+            <p class="text-muted">Rp 5.000</p>
+            <div class="mt-auto d-grid">
+              <button class="btn btn-warning addCart" data-id="RNY-30" data-name="RenyahKu 30gr" data-category="Wafer" data-price="5000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 col-lg-4">
+        <div class="card h-100">
+          <img src="images/wafer70gr.jpeg" class="card-img-top" alt="RenyahKu Wafer 70gr Cokelat Leleh" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title mb-1">RenyahKu 70gr – Cokelat Leleh</h5>
+            <p class="text-muted">Rp 10.000</p>
+            <div class="mt-auto d-grid">
+              <button class="btn btn-warning addCart" data-id="RNY-70" data-name="RenyahKu 70gr" data-category="Wafer" data-price="10000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="cartBtn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cartModal">🛒<span id="cartCount">0</span></button>
+
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Keranjang Belanja</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body" id="cartItems">
+          <p class="text-muted mb-0">Keranjang masih kosong.</p>
+        </div>
+        <div class="modal-footer d-block">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <strong>Total</strong><strong id="cartTotal">Rp 0</strong>
+          </div>
+          <button id="checkoutBtn" class="btn btn-success w-100">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 RenyahKu • Camilan renyah, nikmat setiap gigitan.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const formatIDR=(n)=>new Intl.NumberFormat('id-ID',{style:'currency',currency:'IDR',maximumFractionDigits:0}).format(n);
+    document.addEventListener('DOMContentLoaded',()=>{
+      document.querySelectorAll('.addCart').forEach(btn=>{
+        const price=parseInt(btn.dataset.price);
+        const id=btn.dataset.id;const name=btn.dataset.name;const category=btn.dataset.category;
+        gtag('event','view_item',{currency:'IDR',value:price,items:[{item_id:id,item_name:name,item_category:category,price:price}]});
+      });
+      gtag('event','view_item_list',{items:Array.from(document.querySelectorAll('.addCart')).map(btn=>({item_id:btn.dataset.id,item_name:btn.dataset.name,item_category:btn.dataset.category,price:parseInt(btn.dataset.price)}))});
+    });
+
+    let cart=JSON.parse(localStorage.getItem('renyahku_cart')||'[]');
+    const saveCart=()=>localStorage.setItem('renyahku_cart',JSON.stringify(cart));
+    const renderCart=()=>{
+      const totalQty=cart.reduce((a,i)=>a+i.qty,0);
+      document.getElementById('cartCount').textContent=totalQty;
+      const wrap=document.getElementById('cartItems');
+      if(cart.length===0){wrap.innerHTML='<p class="text-muted mb-0">Keranjang masih kosong.</p>';document.getElementById('cartTotal').textContent='Rp 0';return;}
+      wrap.innerHTML=cart.map((it,idx)=>`<div class="d-flex align-items-center justify-content-between py-2 border-bottom"><div><div class="fw-semibold">${it.name}</div><small class="text-muted">${formatIDR(it.price)} / pcs</small></div><div class="d-flex align-items-center gap-2"><button class="btn btn-sm btn-outline-secondary qty-btn" onclick="updateQty(${idx},-1)">-</button><span>${it.qty}</span><button class="btn btn-sm btn-outline-secondary qty-btn" onclick="updateQty(${idx},1)">+</button><button class="btn btn-sm btn-outline-danger" onclick="removeItem(${idx})">×</button></div></div>`).join('');
+      const total=cart.reduce((a,i)=>a+i.price*i.qty,0);
+      document.getElementById('cartTotal').textContent=formatIDR(total);
+    };
+    const addToCart=(prod)=>{
+      const found=cart.find(i=>i.id===prod.id);
+      if(found){found.qty+=1;}else{cart.push({...prod,qty:1});}
+      saveCart();renderCart();
+      gtag('event','add_to_cart',{currency:'IDR',value:prod.price,items:[{item_id:prod.id,item_name:prod.name,item_category:prod.category,price:prod.price,quantity:1}]});
+    };
+    window.updateQty=(idx,delta)=>{if(!cart[idx])return;cart[idx].qty+=delta;if(cart[idx].qty<=0)cart.splice(idx,1);saveCart();renderCart();};
+    window.removeItem=(idx)=>{cart.splice(idx,1);saveCart();renderCart();};
+    document.querySelectorAll('.addCart').forEach(btn=>{btn.addEventListener('click',()=>{const p={id:btn.dataset.id,name:btn.dataset.name,category:btn.dataset.category,price:parseInt(btn.dataset.price)};addToCart(p);});});
+    renderCart();
+    document.getElementById('checkoutBtn').addEventListener('click',()=>{
+      if(cart.length===0){alert('Keranjang masih kosong. Tambahkan produk dulu ya!');return;}
+      const items=cart.map(i=>({item_id:i.id,item_name:i.name,item_category:i.category,price:i.price,quantity:i.qty}));
+      const total=cart.reduce((a,i)=>a+i.price*i.qty,0);
+      gtag('event','begin_checkout',{currency:'IDR',value:total,items});
+      if(confirm(`Total belanja kamu ${formatIDR(total)}. Lanjutkan pembayaran (simulasi)?`)){
+        gtag('event','purchase',{transaction_id:'TX'+Date.now(),currency:'IDR',value:total,items});
+        cart=[];saveCart();renderCart();const modal=bootstrap.Modal.getInstance(document.getElementById('cartModal'));if(modal)modal.hide();setTimeout(()=>alert('Pembayaran berhasil! Terima kasih sudah membeli RenyahKu ❤️'),150);
+      }
+    });
+  </script>
+</body>
+</html>
